@@ -73,3 +73,12 @@ numbers = [10, 20, 33, 40, 55, 60]
 
 result = list(filter(lambda x: x % 10 == 0, numbers))
 print(result)
+
+# Filter Out Odd-Length Words and Convert to Uppercase
+# words = ['apple', 'banana', 'cherry', 'date']
+# # Expected Output: ['APPLE', 'CHERRY']
+words = ['apple', 'banana', 'cherry', 'date']
+
+uppercase_odd_length_words = list(filter(lambda x: len(x) % 2 != 0, words))
+uppercase_odd_length_words = [x.upper() for x in uppercase_odd_length_words]
+print(uppercase_odd_length_words)
